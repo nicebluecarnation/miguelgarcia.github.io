@@ -162,10 +162,10 @@
 
         <!-- CERTIFICATIONS PART -->
 
-        <section id="certifications">
+        <section id="projects">
             <h2> Certifications </h2>
             <div class="certifications-container">
-                <div>
+                <div class="cert-card" role="button" tabindex="0" aria-haspopup="dialog" data-modal="cert-modal">
                     <h3>
                         <img src="Cisco_logo_blue_2016.svg.webp" alt="Cisco Logo" class="cert-logo">
                         Getting Started with Cisco Packet Tracer
@@ -173,29 +173,54 @@
                     <p>Cisco Networking Academy</p>
                 </div>
             </div>
-        </section>
 
-        <!-- CONTACT INFO PART -->
+            <dialog id="cert-modal" aria-labelledby="cert-title">
+                <button type="button" class="modal-close" aria-label="Close">&times;</button>
 
-        <section id="contactinfo">
-            <h2> Contact Info </h2>
-            <div class="contact-row">
-                <p> <strong>Address:</strong> Greenwoods Executive Village, Cainta, Rizal </p>
-                <button type="button" class="copy-btn" id="copy-address"
-                    data-copy="Greenwoods Executive Village, Cainta, Rizal" aria-label="Copy address"> Copy </button>
-            </div>
-            <div class="contact-row">
-                <p> <strong>Mobile Number:</strong> <a href="tel:+639935221962"> +63 993 522 1962 </a> </p>
-                <button type="button" class="copy-btn" id="copy-number" data-copy="+639935221962"
-                    aria-label="Copy mobile number"> Copy </button>
-            </div>
-            <div class="contact-row">
-                <p> <strong>Email:</strong> <a href="mailto:miguelangelico.garcia@gmail.com" target="_blank"
-                        rel="noopener noreferrer">miguelangelico.garcia@gmail.com </a> </p>
-                <button type="button" class="copy-btn" id="copy-email" data-copy="miguelangelico.garcia@gmail.com"
-                    aria-label="Copy email"> Copy </button>
-            </div>
-        </section>
+                <img class="cert-image" src="CISCOCERT.png" alt="Getting Started with Cisco Packet Tracer certificate">
+
+                <article class="cert-details">
+                    <h2 id="cert-title">Getting Started with Cisco Packet Tracer</h2>
+                    <p class="card-meta">Cisco Networking Academy | Issued: Sep 2025</p>
+
+                    <h3>What I learned</h3>
+                    <ul>
+                        <li>Building and simulating network topologies</li>
+                        <li>Configuring routers and switches</li>
+                    </ul>
+
+                    <h3>Credential</h3>
+                    <dl>
+                        <div>
+                            <dt>Issuer</dt>
+                            <dd>Cisco Networking Academy</dd>
+                        </div>
+                    </dl>
+                </article>
+            </dialog>
+
+            <!-- CONTACT INFO PART -->
+
+            <section id="contactinfo">
+                <h2> Contact Info </h2>
+                <div class="contact-row">
+                    <p> <strong>Address:</strong> Greenwoods Executive Village, Cainta, Rizal </p>
+                    <button type="button" class="copy-btn" id="copy-address"
+                        data-copy="Greenwoods Executive Village, Cainta, Rizal" aria-label="Copy address"> Copy
+                    </button>
+                </div>
+                <div class="contact-row">
+                    <p> <strong>Mobile Number:</strong> <a href="tel:+639935221962"> +63 993 522 1962 </a> </p>
+                    <button type="button" class="copy-btn" id="copy-number" data-copy="+639935221962"
+                        aria-label="Copy mobile number"> Copy </button>
+                </div>
+                <div class="contact-row">
+                    <p> <strong>Email:</strong> <a href="mailto:miguelangelico.garcia@gmail.com" target="_blank"
+                            rel="noopener noreferrer">miguelangelico.garcia@gmail.com </a> </p>
+                    <button type="button" class="copy-btn" id="copy-email" data-copy="miguelangelico.garcia@gmail.com"
+                        aria-label="Copy email"> Copy </button>
+                </div>
+            </section>
     </main>
 
     <!-- FOOTER PART -->

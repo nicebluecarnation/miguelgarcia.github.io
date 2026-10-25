@@ -319,6 +319,73 @@ dd {
     margin-left: 0.5rem;
 }
 
+/* clickable cert card */
+
+.cert-card {
+    cursor: pointer;
+    transition: border-color 0.3s ease, transform 0.2s ease;
+}
+
+.cert-card:hover {
+    border-color: var(--accent) !important;
+    transform: translateY(-2px);
+}
+
+/* modal */
+
+dialog {
+    width: min(90vw, 44rem);
+    max-height: 85vh;
+    padding: 0;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    background-color: var(--surface);
+    color: var(--text);
+    overflow-y: auto;
+}
+
+dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.cert-image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.cert-details {
+    padding: 1.5rem;
+}
+
+.cert-details h3 {
+    margin-bottom: 0.25rem;
+}
+
+/* visible parin X while scrolling */
+.modal-close {
+    position: sticky;
+    top: 0.5rem;
+    display: block;
+    margin: 0.5rem 0.5rem -2.5rem auto;
+    /* X style */
+    width: 2.25rem;
+    height: 2.25rem;
+    border: 1px solid var(--accent);
+    border-radius: 50%;
+    background-color: var(--surface);
+    color: var(--accent);
+    font-size: 1.25rem;
+    line-height: 1;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.modal-close:hover {
+    background-color: var(--accent);
+    color: var(--accent-contrast);
+}
+
 /* contact */
 
 .contact-row {

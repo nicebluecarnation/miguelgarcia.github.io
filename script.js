@@ -175,3 +175,29 @@ window.addEventListener("scroll", () => {
 topBtn.addEventListener("click", () => {
     window.scrollTo({ top: 0 });
 });
+
+// ==CERTIFICATION MODAL==
+const certCards = document.querySelectorAll(".cert-card");
+
+function openModal(modal) {
+    modal.showModal();
+    document.body.style.overflow = "hidden";
+}
+
+certCards.forEach((card) => {
+    const modal = document.getElementById(card.dataset.modal);
+    const closeBtn = modal.querySelector(".modal-close");
+
+    card.addEventListener("click", () => openModal(modal));
+
+    closeBtn.addEventListener("click", () => modal.close());
+
+    modal.addEventListener("click", (event) => {
+        if (event.target === modal) modal.close();
+    });
+
+    modal.addEventListener("close", () => {
+        document.body.style.overflow = "";
+        card.focus();
+    });
+});
