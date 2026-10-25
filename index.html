@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Miguel Garcia | Resume </title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<!-- random personal reminder nakakalito kasi: class = . | id = # -->
+
+<!-- HEADER PART -->
+
+<body>
+    <header>
+        <img src="PFP.png" alt="Miguel's Picture" width="100">
+        <h1> Miguel Garcia </h1>
+        <p> 3rd Year IT Student </p>
+        <nav>
+            <ul>
+                <li> <a href="#aboutme"> About Me </a> </li>
+                <li> <a href="#personaldata"> Personal Data </a> </li>
+                <li> <a href="#education"> Education </a> </li>
+                <li> <a href="#work"> Work Experience </a> </li>
+                <li> <a href="#skills"> Skills </a> </li>
+                <li> <a href="#projects"> Projects </a> </li>
+                <li> <a href="#certifications"> Certifications </a> </li>
+                <li> <a href="#contactinfo"> Contact Info </a> </li>
+            </ul>
+        </nav>
+        <button type="button" id="theme-btn"> Dark mode </button>
+    </header>
+
+    <!-- ABOUT ME PART -->
+
+    <main>
+        <section id="aboutme">
+            <h2> About me </h2>
+            <p> BSIT student at PUP with a foundation in programming, databases, and networking, plus a year of
+                professional experience in video editing and media production. I combine technical problem-solving with
+                creative thinking to build solutions that work well and are easy to use. Looking for a full-time role
+                where I can add value from day one and keep developing my skills. </p>
+        </section>
+
+        <!-- PERSONAL DATA PART -->
+
+        <section id="personaldata">
+            <h2> Personal Data </h2>
+            <dl>
+                <div>
+                    <dt>Date of Birth: </dt>
+                    <dd> July 18, 2005 </dd>
+                </div>
+                <div>
+                    <dt>Height: </dt>
+                    <dd> 166cm / 5'5 </dd>
+                </div>
+                <div>
+                    <dt>Languages: </dt>
+                    <dd> Filipino (Tagalog), English </dd>
+                </div>
+            </dl>
+        </section>
+
+        <!-- EDUCATION PART -->
+
+        <section id="education">
+            <h2> Education </h2>
+            <div class="education-container">
+                <div class="edu-card">
+                    <img class="card-logo" src="cropped-APEC-SCHOOLS-NEW-LOGO-V2-1-scaled-2.webp"
+                        alt="APEC Schools logo">
+                    <div>
+                        <h3> APEC Schools - C. Raymundo </h3>
+                        <p class="card-meta"> Science, Technology, Engineering, and Math (STEM) | 2022 - 2024 </p>
+                        <p> Completed senior high school under the STEM strand. </p>
+                    </div>
+                </div>
+                <div class="edu-card">
+                    <img class="card-logo" src="PUPLogo.png" alt="Polytechnic University of the Philippines logo">
+                    <div>
+                        <h3> Polytechnic University of the Philippines </h3>
+                        <p class="card-meta"> Bachelor of Science in Information Technology (BSIT) | 3rd Year </p>
+                        <p> Currently taking up BSIT, building skills in programming, networking, and web development.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- WORK EXPERIENCE PART -->
+
+        <section id="work">
+            <h2> Work Experience </h2>
+            <h3>Creator Crate</h3>
+            <p>2025 - 2026</p>
+            <ul>
+                <li>Video Editor </li>
+                <li>Media Production </li>
+                <li>Marketing </li>
+            </ul>
+        </section>
+
+
+        <!-- SKILLS PART -->
+
+        <section id="skills">
+            <h2> Skills </h2>
+            <div class="filters">
+                <button type="button" class="filter-btn" data-filter="all" aria-pressed="true"> All
+                </button>
+                <button type="button" class="filter-btn" data-filter="technical" aria-pressed="false"> Technical
+                </button>
+                <button type="button" class="filter-btn" data-filter="creative" aria-pressed="false"> Creative </button>
+            </div>
+            <ul>
+                <li class="skill technical" data-type="technical"> HTML </li>
+                <li class="skill technical" data-type="technical"> CSS </li>
+                <li class="skill technical" data-type="technical"> JavaScript </li>
+                <li class="skill technical" data-type="technical"> Java </li>
+                <li class="skill technical" data-type="technical"> Python </li>
+                <li class="skill technical" data-type="technical"> Cisco Packet Tracer </li>
+                <li class="skill technical" data-type="technical"> SQL </li>
+                <li class="skill creative" data-type="creative"> Adobe Premiere Pro </li>
+                <li class="skill creative" data-type="creative"> Adobe Lightroom </li>
+                <li class="skill creative" data-type="creative"> After Effects </li>
+                <li class="skill creative" data-type="creative"> CapCut </li>
+                <li class="skill creative" data-type="creative"> Camera Operation </li>
+                <li class="skill creative" data-type="creative"> Canva </li>
+            </ul>
+        </section>
+
+        <!-- PROJECTS PART -->
+
+        <section id="projects">
+            <h2> Projects </h2>
+            <div class="projects-container">
+                <div class="project-card">
+                    <div class="project-img-container">
+                        <img src="resumewebsitescreenshot.png" alt="Screenshot of the resume website">
+                    </div>
+                    <div class="project-info">
+                        <h3>Resume Website</h3>
+                        <p>A responsive, interactive resume built with HTML, CSS, and JavaScript. It has a dark mode, a
+                            skills filter, and copy buttons for contact info.</p>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-img-container">
+                        <img src="attendancescreenshot.png" alt="Screenshot of the Java Attendance Tracker">
+                    </div>
+                    <div class="project-info">
+                        <h3>Java Attendance Tracker</h3>
+                        <p>An attendance monitoring system built in Java for a class project.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CERTIFICATIONS PART -->
+
+        <section id="certifications">
+            <h2> Certifications </h2>
+            <div class="certifications-container">
+                <div>
+                    <h3>
+                        <img src="Cisco_logo_blue_2016.svg.webp" alt="Cisco Logo" class="cert-logo">
+                        Getting Started with Cisco Packet Tracer
+                    </h3>
+                    <p>Cisco Networking Academy</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT INFO PART -->
+
+        <section id="contactinfo">
+            <h2> Contact Info </h2>
+            <div class="contact-row">
+                <p> <strong>Address:</strong> Greenwoods Executive Village, Cainta, Rizal </p>
+                <button type="button" class="copy-btn" id="copy-address"
+                    data-copy="Greenwoods Executive Village, Cainta, Rizal" aria-label="Copy address"> Copy </button>
+            </div>
+            <div class="contact-row">
+                <p> <strong>Mobile Number:</strong> <a href="tel:+639935221962"> +63 993 522 1962 </a> </p>
+                <button type="button" class="copy-btn" id="copy-number" data-copy="+639935221962"
+                    aria-label="Copy mobile number"> Copy </button>
+            </div>
+            <div class="contact-row">
+                <p> <strong>Email:</strong> <a href="mailto:miguelangelico.garcia@gmail.com" target="_blank"
+                        rel="noopener noreferrer">miguelangelico.garcia@gmail.com </a> </p>
+                <button type="button" class="copy-btn" id="copy-email" data-copy="miguelangelico.garcia@gmail.com"
+                    aria-label="Copy email"> Copy </button>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER PART -->
+
+    <footer>
+        <p> Copyright © 2026 Miguel Garcia. All rights reserved. </p>
+    </footer>
+
+    <button type="button" id="top-btn" class="top-btn" aria-label="Back to top">&uarr;</button>
+    <div id="toast" role="status" aria-live="polite"></div>
+    <script src="script.js"></script>
+</body>
+
+</html>
